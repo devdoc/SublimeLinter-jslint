@@ -1,0 +1,10 @@
+SublimeLinter-jslint
+-------------------------------
+This linter plugin for SublimeLinter provides an interface to jslint.
+
+INSTALLATION
+------------
+Before this plugin will activate, you *must* follow the installation
+instructions here:
+
+https://github.com/devdoc/SublimeLinter-jslint
