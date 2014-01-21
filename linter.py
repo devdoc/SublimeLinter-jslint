@@ -18,18 +18,15 @@ class Jslint(Linter):
     """Provides an interface to jslint."""
 
     syntax = ('javascript', 'html')
-    cmd = 'jslint'
-    executable = 'jslint'
-    regex = r'^\s*#\d+ (?P<message>.+)\n\s{4}.*// Line (?P<line>\d+), Pos (?P<col>\d+)$'
-    multiline = True
-    line_col_base = (1, 1)
-    tempfile_suffix = "tmp"
+    cmd = 'jslint --terse --'
+    regex = r'^.+?:(?P<line>\d+):(?P<col>\d+): (?P<message>.+)$'
+    tempfile_suffix = {
+        'javascript': 'js',
+        'html': 'html'
+    }
     error_stream = util.STREAM_STDOUT
     selectors = {
         'html': 'source.js.embedded.html'
     }
     word_re = None
-    defaults = {}
-    inline_settings = None
-    inline_overrides = None
     comment_re = r'\s*/[/*]'
