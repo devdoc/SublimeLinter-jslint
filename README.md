@@ -38,6 +38,10 @@ To install via Package Control, do the following:
 ## Settings
 For general information on how SublimeLinter works with settings, please see [Settings][settings]. For information on generic linter settings, please see [Linter Settings][linter-settings].
 
+Linter Settings can be of use when you want to control the default behaviour of `jslint` globally for all files. The `args` linter setting can be used to pass specified arguments to `jslint` each time it is called. For example, if you want to increase the maximum number of errors `jslint` will process before giving up from the default 50 to 100, you could add `"args": "--maxerr 100"` to the `jslint` section in SublimeLinter User settings.
+
+Please note that `jslint` can also be configured on a file-by-file basis by using inline [JSLint directives](http://www.jslint.com/lint.html#options) in the JavaScript files to be linted.
+
 ## Contributing
 If you would like to contribute enhancements or fixes, please do the following:
 
