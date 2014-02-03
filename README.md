@@ -1,17 +1,17 @@
 SublimeLinter-contrib-jslint
 ================================
 
-This linter plugin for [SublimeLinter][docs] provides an interface to [jslint](http://www.jslint.com/lint.html). It will be used with files that have the “JavaScript” syntax.
+This linter plugin for [SublimeLinter][docs] provides an interface to [JSLint](http://www.jslint.com/lint.html). It will be used with files that have the “JavaScript” syntax.
 
 ## Installation
 SublimeLinter 3 must be installed in order to use this plugin. If SublimeLinter 3 is not installed, please follow the instructions [here][installation].
 
 ### Linter installation
-Before using this plugin, you must ensure that `jslint` is installed on your system. To install `jslint`, do the following:
+Before using this plugin, you must ensure that the `jslint` npm package is installed on your system. To install `jslint`, do the following:
 
 1. Install [Node.js](http://nodejs.org) (and [npm](https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager) on Linux).
 
-1. Install `jslint` by typing the following in a terminal:
+1. Install the `jslint` npm package by typing the following in a terminal:
    ```
    npm install -g jslint
    ```
@@ -38,9 +38,9 @@ To install via Package Control, do the following:
 ## Settings
 For general information on how SublimeLinter works with settings, please see [Settings][settings]. For information on generic linter settings, please see [Linter Settings][linter-settings].
 
-Linter Settings can be of use when you want to control the default behaviour of `jslint` globally for all files. The `args` linter setting can be used to pass specified arguments to `jslint` each time it is called. For example, if you want to increase the maximum number of errors `jslint` will process before giving up from the default 50 to 100, you could add `"args": "--maxerr 100"` to the `jslint` section in SublimeLinter User settings.
+Linter Settings can be of use when you want to control the default behaviour of `jslint` globally for all files. The `args` linter setting can be used to specify options that will be passed to `jslint` on every run. For example, if you want to increase the maximum number of errors `jslint` will process from the default 50 to 100, you can add `"args": "--maxerr=100"` to the `jslint` section in SublimeLinter User settings. To list all supported options, run `jslint` without options from a command prompt. You may want to refer to the [readme](https://npmjs.org/package/jslint#readme) for the `jslint` npm package, and to the [description of JSLint options](http://www.jslint.com/lint.html#options).
 
-Please note that `jslint` can also be configured on a file-by-file basis by using inline [JSLint directives](http://www.jslint.com/lint.html#options) in the JavaScript files to be linted.
+Please note that options can also be specified for individual files by using inline [JSLint directives](http://www.jslint.com/lint.html#options) in the JavaScript files to be linted.
 
 ## Contributing
 If you would like to contribute enhancements or fixes, please do the following:
