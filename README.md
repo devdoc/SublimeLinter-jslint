@@ -9,9 +9,10 @@ SublimeLinter 3 must be installed in order to use this plugin. If SublimeLinter 
 ### Linter installation
 Before using this plugin, you must ensure that the `jslint` [npm package][jslint-npm] is installed on your system.
 
-***\*\*\* Windows users please note! \*\*\****
+***
+**Windows users please note**  
 If you use v0.3.2 through v0.5.2 (try `jslint --version` on the command line) of the `jslint` npm package, you may experience incomplete listing of linter errors (e.g. only the first linter error may be shown). Please try installing v0.3.1 (see instructions below) as a temporary remedy. This behaviour should be patched in the (at the moment of writing) upcoming v0.5.3. Node.js seems to have fixed the underlying [issue][node-issue-3584] in (upcoming) v0.12.
-***\*\*\* Windows users please note! \*\*\****
+***
 
 To install `jslint`, do the following:
 
