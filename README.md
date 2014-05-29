@@ -7,13 +7,23 @@ This linter plugin for [SublimeLinter][docs] provides an interface to [JSLint](h
 SublimeLinter 3 must be installed in order to use this plugin. If SublimeLinter 3 is not installed, please follow the instructions [here][installation].
 
 ### Linter installation
-Before using this plugin, you must ensure that the `jslint` npm package is installed on your system. To install `jslint`, do the following:
+Before using this plugin, you must ensure that the `jslint` [npm package][jslint-npm] is installed on your system.
+
+***\*\*\* Windows users please note! \*\*\****
+If you use v0.3.2 through v0.5.2 (try `jslint --version` on the command line) of the `jslint` npm package, you may experience incomplete listing of linter errors (e.g. only the first linter error may be shown). Please try installing v0.3.1 (see instructions below) as a temporary remedy. This behaviour should be patched in the (at the moment of writing) upcoming v0.5.3. Node.js seems to have fixed the underlying [issue][node-issue-3584] in (upcoming) v0.12.
+***\*\*\* Windows users please note! \*\*\****
+
+To install `jslint`, do the following:
 
 1. Install [Node.js](http://nodejs.org) (and [npm](https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager) on Linux).
 
 1. Install the `jslint` npm package by typing the following in a terminal:
    ```
    npm install -g jslint
+   ```
+   You may also specify the exact version of the package to be installed like this:
+   ```
+   npm install -g jslint@0.3.1
    ```
 
 1. If you are using `nvm` and `zsh`, ensure that the line to load `nvm` is in `.zshenv` and not `.zshrc`.
@@ -68,3 +78,5 @@ Thank you for helping out!
 [settings]: http://sublimelinter.readthedocs.org/en/latest/settings.html
 [linter-settings]: http://sublimelinter.readthedocs.org/en/latest/linter_settings.html
 [inline-settings]: http://sublimelinter.readthedocs.org/en/latest/settings.html#inline-settings
+[node-issue-3584]: https://github.com/joyent/node/issues/3584
+[jslint-npm]: https://www.npmjs.org/package/jslint

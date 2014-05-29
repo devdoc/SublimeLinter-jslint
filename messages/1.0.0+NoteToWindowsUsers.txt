@@ -1,0 +1,3 @@
+*** WINDOWS USERS PLEASE NOTE! ***
+
+If you use v0.3.2 through v0.5.2 (try 'jslint --version' on the command line) of the jslint npm package, you may experience incomplete listing of linter errors (e.g. only the first linter error may be shown). Please try installing v0.3.1 (write 'npm -g install jslint@0.3.1' at the command line) as a temporary remedy. This behaviour should be patched in the (at the moment of writing) upcoming v0.5.3 of the jslint npm package. Node.js seems to have fixed the underlying issue (https://github.com/joyent/node/issues/3584) in (upcoming) v0.12.
