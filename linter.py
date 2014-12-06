@@ -19,6 +19,7 @@ class Jslint(Linter):
 
     syntax = ('javascript', 'html')
     cmd = 'jslint --terse'
+    config_file = ('--config', '.jslintrc', '~')
     regex = r'^.+?:(?P<line>\d+):(?P<col>\d+): (?P<message>.+)$'
     tempfile_suffix = 'js'
     error_stream = util.STREAM_STDOUT

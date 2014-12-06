@@ -1,0 +1,1 @@
+This version adds support for specifying options for directories or globally via .jslintrc. Please refer to the readme (https://sublime.wbond.net/packages/SublimeLinter-contrib-jslint#readme) for more information.
