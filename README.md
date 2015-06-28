@@ -44,11 +44,11 @@ To install via Package Control, do the following:
 ## Settings
 For general information on how SublimeLinter works with settings, please see [Settings][settings]. For information on generic linter settings, please see [Linter Settings][linter-settings].
 
-Linter Settings can be of use when you want to control the default behaviour of `jslint` globally for all files. The `args` linter setting can be used to specify options that will be passed to `jslint` on every run. For example, if you want to increase the maximum number of errors `jslint` will process from the default 50 to 100, you can add `"args": "--maxerr=100"` to the `jslint` section in SublimeLinter User settings. To list all supported options, run `jslint` without options from a command prompt. You may want to refer to the [readme](https://npmjs.org/package/jslint#readme) for the `jslint` npm package, and to the [description of JSLint options][jslint-options].
+Linter Settings can be of use when you want to control the default behaviour of `jslint` globally for all files. The `args` linter setting can be used to specify options that will be passed to `jslint` on every run. For example, if you want to increase the maximum number of errors `jslint` will process from the default 50 to 100, you can add `"args": "--maxerr=100"` to the `jslint` section in SublimeLinter User settings. To list all supported options, run `jslint` without options from a command prompt. You may want to refer to the [readme](https://npmjs.org/package/jslint#readme) for the `jslint` npm package, and to the [description of JSLint options][jslint-options-20130826].
 
 Please note that options can also be specified
 
-- in a file called `.jslintrc` written in JSON format, specifying options as key-value pairs (refer to [description of JSLint options][jslint-options] for specifics on valid keys and values)
+- in a file called `.jslintrc` written in JSON format, specifying options as key-value pairs (refer to [description of JSLint options][jslint-options-20130826] for specifics on valid keys and values)
     * globally, by placing the file in the user's home directory
     * for directories or hierarchies of directories (please refer to SublimeLinter's [documentation for the config_file attribute][config_file] to understand where SublimeLinter will search for `.jslintrc`)
 - by inline [JSLint directives](http://www.jslint.com/lint.html#options) in the JavaScript files to be linted.
@@ -80,5 +80,5 @@ Thank you for helping out!
 [linter-settings]: http://sublimelinter.readthedocs.org/en/latest/linter_settings.html
 [inline-settings]: http://sublimelinter.readthedocs.org/en/latest/settings.html#inline-settings
 [jslint-npm]: https://www.npmjs.org/package/jslint
-[jslint-options]: http://www.jslint.com/lint.html#options
+[jslint-options-20130826]: https://github.com/douglascrockford/JSLint/blob/650bcde1642e53cbfbd248a6092ddebb61ce3985/jslint.js#L178
 [config_file]: http://www.sublimelinter.com/en/latest/linter_attributes.html#config-file
