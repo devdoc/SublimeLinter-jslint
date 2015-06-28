@@ -51,7 +51,7 @@ Please note that options can also be specified
 - in a file called `.jslintrc` written in JSON format, specifying options as key-value pairs (refer to [description of JSLint options][jslint-options-20130826] for specifics on valid keys and values)
     * globally, by placing the file in the user's home directory
     * for directories or hierarchies of directories (please refer to SublimeLinter's [documentation for the config_file attribute][config_file] to understand where SublimeLinter will search for `.jslintrc`)
-- by inline [JSLint directives](http://www.jslint.com/lint.html#options) in the JavaScript files to be linted.
+- by inline [JSLint directives](https://github.com/douglascrockford/JSLint/blob/650bcde1642e53cbfbd248a6092ddebb61ce3985/jslint.js#L165) in the JavaScript files to be linted.
 
 ## Contributing
 If you would like to contribute enhancements or fixes, please do the following:
